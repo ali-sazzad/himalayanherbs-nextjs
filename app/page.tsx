@@ -1,5 +1,5 @@
 // import Link from "next/link";
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import './globals.css';
 
 export default function Home() {
@@ -8,8 +8,8 @@ export default function Home() {
 
       {/* <h1>Hello Testing!</h1>
       <Link href="/header">Header</Link> */}
-      
-      <Navbar />
+
+        <Navbar />
 
     </main>
   );
