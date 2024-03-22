@@ -33,7 +33,7 @@ function Navbar() {
                         </Link>
                     </li>
 
-                   {/* here toggle/clickable products links */}
+                   {/* here hoverable products links */}
                     <li className={`${styles.hoverLinks} hover:bg-lime-50`}>
                     <a href="#" className="relative block py-6 px-4 lg:p-6 text-sm lg:text-base font-bold hover:bg-lime-50">Products</a>
                         <div className={`p-6 ${styles.megaMenu} mb-16 sm:mb-0 shadow-xl bg-lime-50`}>
@@ -107,7 +107,7 @@ function Navbar() {
                                         <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Workshops</a>
                                     </li>
                                     <li className="pt-3">
-                                        <video height="300" width="300" alt="https://www.vecteezy.com/video/8192251-small-tree-growing-it-has-been-planted-and-watered-well small tree growing It has been planted and watered well. Stock Videos by Vecteezy" src="./public/images/Presentation1.mp4" autoplay mute loop className="p-3 border-none rounded-xl shadow-xl"></video> 
+                                        <video height="300" width="300" alt="https://www.vecteezy.com/video/8192251-small-tree-growing-it-has-been-planted-and-watered-well small tree growing It has been planted and watered well. Stock Videos by Vecteezy" src="/Presentation1.mp4" autoplay mute loop className="p-3 border-none rounded-xl shadow-xl"></video> 
                                     </li>                  
                                 </ul>
 
