@@ -54,22 +54,6 @@
 }
 
 
-
-/* here search container div design */
-.searchContainer {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    top: 100%;
-    padding: 15px;
-    background: rgb(132,204,22);
-}
-.searchContainer h2 {
-    font-size: 24px;
-}
-
-
 /* here hoverable design */
 .hoverLinks {
     position: static;
@@ -81,6 +65,10 @@
     padding-left: 6px;
     position: relative;
     top: -1px;
+}
+
+.hoverLinks:hover {
+    content: "\25B2";
 }
 
 .hoverLinks:hover .megaMenu {

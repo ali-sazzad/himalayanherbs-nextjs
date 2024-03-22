@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Link from 'next/image';
 import styles from './Navbar.module.css';
 import { RiLeafFill,  RiStackFill, RiMegaphoneFill, RiEraserFill} from '@remixicon/react';
 
@@ -35,60 +34,59 @@ function Navbar() {
                     </li>
 
                    {/* here toggle/clickable products links */}
-                    <li className={`${styles.toggle} hover:bg-lime-50`}>
-                        <input type="checkbox" value="selected" id="toggleLink" className={styles.toggleInput} />
-                        <label htmlFor="toggleLink" className="cursor-pointer py-6 block px-4 text-sm lg:text-base font-bold">Products</label>
-                        <div role="toggle" className={`p-6 ${styles.megaMenu} mb-16 sm:mb-0 shadow-xl bg-lime-50`}>
+                    <li className={`${styles.hoverLinks} hover:bg-lime-50`}>
+                    <a href="#" className="relative block py-6 px-4 lg:p-6 text-sm lg:text-base font-bold hover:bg-lime-50">Products</a>
+                        <div className={`p-6 ${styles.megaMenu} mb-16 sm:mb-0 shadow-xl bg-lime-50`}>
                             <div className={`${styles.container} max-auto w-full flex flex-wrap justify-between mx-2`}>
                                 
                                 <ul className="px-4 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 ">
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">MEDICINAL HERBS</h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Healling Properties</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Healing Properties</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbbal Remedies</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Remedies</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Commmon Ailments</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Common Ailments</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Arommatherapy Uses</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Aromatherapy Uses</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbbal Infusions</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Infusions</a>
                                     </li>
                                 </ul>
 
                                 <ul className="px-4 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 ">
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">CULINARY HERBS</h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Cookking Essentials</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Cooking Essentials</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Popuular Recipes</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Popular Recipes</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Custtom Blends</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Custom Blends</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seassonal Mixes</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seasonal Mixes</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbbal Infusions</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Infusions</a>
                                     </li>                           
                                 </ul>
 
                                 <ul className="px-4 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3 ">
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">ORGANIC HERBS</h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Spiccy Selections</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Spicy Selections</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Globbal Spice Blends</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Global Spice Blends</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbbal Tea Blends</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Tea Blends</a>
                                     </li>
                                     <li>
                                         <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seed Varieties</a>
@@ -103,10 +101,10 @@ function Navbar() {
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">HERBS EDUCATION
                                     </h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Garddening Tips</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Gardening Tips</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbbal Workshops</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Workshops</a>
                                     </li>
                                     <li className="pt-3">
                                         <video height="300" width="300" alt="https://www.vecteezy.com/video/8192251-small-tree-growing-it-has-been-planted-and-watered-well small tree growing It has been planted and watered well. Stock Videos by Vecteezy" src="./public/images/Presentation1.mp4" autoplay mute loop className="p-3 border-none rounded-xl shadow-xl"></video> 
@@ -270,21 +268,12 @@ function Navbar() {
                     </li>
 
                     {/* search link  */}
-                    <li className="font-bold relative py-6 px-4 text-sm lg:text-base flex justify-center items-center">
+                    <li className={`${styles.megaSearch} font-bold relative py-6 px-4 text-sm lg:text-base flex justify-center items-center`}>
                         <a href="/" className="hover:text-lime-700">
                             Search &nbsp;
                         </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54,83,20,1)"  width="22" height="22"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>                    
-                    </li>
-
-                    {/* search - mega-contents here */}
-                    <div className="search-container hidden">
-                        <h2 className="">Search our products</h2>
-                        <div className="flex flex-row gap-5">
-                            <input type="text" /> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54,83,20,1)"  width="22" height="22"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>  
-                        </div>         
-                    </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54,83,20,1)"  width="22" height="22"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>         
+                    </li>          
 
                     {/* cart link */}
                     <li className="font-bold relative py-6 px-4 text-sm lg:text-base flex justify-center items-center">
