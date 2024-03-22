@@ -1,4 +1,6 @@
 // import Link from "next/link";
+import Footer from './components/Footer';
+import MainContent from './components/MainContent';
 import Navbar from './components/Navbar';
 import './globals.css';
 
@@ -10,6 +12,10 @@ export default function Home() {
       <Link href="/header">Header</Link> */}
 
         <Navbar />
+
+        <MainContent />
+
+        <Footer />
 
     </main>
   );
