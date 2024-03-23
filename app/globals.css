@@ -28,8 +28,8 @@ html, body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  /* color: rgb(var(--foreground-rgb)); */
+  padding: 0.5rem;
 }
 
 @layer utilities {
