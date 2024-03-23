@@ -12,7 +12,7 @@ function Navbar() {
             <div className={`${styles.container} max-auto flex max-md:flex-col justify-between`}>
                 
                 {/* company logo/name is here ... */}
-                <div className="relative block p-4 text-green-950 font-bold">
+                <div className="relative block py-4 text-green-950 font-bold">
                     <Link href="/" className="text-3xl hover:text-lime-900">
                         himalayan herbs
                     </Link>
@@ -42,57 +42,57 @@ function Navbar() {
                                 <ul className="px-4 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 ">
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">MEDICINAL HERBS</h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Healing Properties</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Healing Properties</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Remedies</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Herbal Remedies</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Common Ailments</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Common Ailments</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Aromatherapy Uses</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Aromatherapy Uses</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Infusions</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Herbal Infusions</a>
                                     </li>
                                 </ul>
 
                                 <ul className="px-4 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 ">
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">CULINARY HERBS</h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Cooking Essentials</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Cooking Essentials</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Popular Recipes</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Popular Recipes</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Custom Blends</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Custom Blends</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seasonal Mixes</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Seasonal Mixes</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Infusions</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Herbal Infusions</a>
                                     </li>                           
                                 </ul>
 
                                 <ul className="px-4 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3 ">
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">ORGANIC HERBS</h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Spicy Selections</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Spicy Selections</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Global Spice Blends</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Global Spice Blends</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Tea Blends</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Herbal Tea Blends</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seed Varieties</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Seed Varieties</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Certified Organic Options</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Certified Organic Options</a>
                                     </li>                              
                                 </ul>
 
@@ -101,13 +101,13 @@ function Navbar() {
                                     <h3 className="font-bold text-xl  text-black mb-2 text-bold">HERBS EDUCATION
                                     </h3>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Gardening Tips</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Gardening Tips</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Workshops</a>
+                                        <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-200 hover:text-green-900">Herbal Workshops</a>
                                     </li>
                                     <li className="pt-3">
-                                        <video height="300" width="300" alt="https://www.vecteezy.com/video/8192251-small-tree-growing-it-has-been-planted-and-watered-well small tree growing It has been planted and watered well. Stock Videos by Vecteezy" src="/Presentation1.mp4" autoplay mute loop className="p-3 border-none rounded-xl shadow-xl"></video> 
+                                        <video height="300" width="300" src="/Presentation1.mp4" autoPlay muted loop className="p-3 border-none rounded-xl shadow-xl"></video> 
                                     </li>                  
                                 </ul>
 
@@ -117,7 +117,7 @@ function Navbar() {
 
                     {/* This is regular links 'contact us' hidden for smaller screen/mobile version */}
                     <li className="hover:bg-lime-50 max-lg:hidden">
-                        <Link href="/" className="font-bold relative block py-6 px-2 text-sm lg:text-base">Contact</Link>                  
+                        <Link href="/" className="font-bold relative block py-6 px-2 text-sm lg:text-base">Contact</Link>
                     </li>
                 </ul>
 

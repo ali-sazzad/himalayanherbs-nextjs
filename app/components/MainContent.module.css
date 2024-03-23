@@ -1,0 +1,10 @@
+
+
+.borderBottom {
+    content: "";
+    display: block;
+    margin: 55px auto;
+    width: 55%;
+    padding-top: 20px;
+    border-block-start: 1px solid black;
+}

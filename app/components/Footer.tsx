@@ -9,13 +9,14 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     // FOOTER SECTION  HERE
-    <section className={`${styles.footerMenuContainer} pb-5 w-full `}>
+    <section className={`${styles.footerMenuContainer} pb-5 w-full border-blue-100 border-t`}>
         <div className={`${styles.footerMenu} w-full items-center max-md:gap-2 max-md:flex-col`}>           
-            <div className={`  mb-16 sm:mb-0`}>
-                <div className={`${styles.container} max-auto w-full flex flex-wrap gap-0 justify-between mx-2`}>
+            <div className={`mb-16 sm:mb-0`}>
+                <div className={`${styles.container} w-full flex flex-wrap gap-0 justify-between`}>
                                     
-                    {/* footer image here... */}
-                    <ul className="px-2 w-full sm:w-1/2 lg:w-1/4 border-green-50 pb-6 pt-6 lg:pt-3">
+                    {/* footer image and general footer information here... */}
+                    <ul className="px-2 w-full sm:w-1/2 lg:w-1/5 pb-6 pt-6 lg:pt-3">
+                        {/* footer image here */}
                         <li className="pb-3">
                             <Link href={'/'}>
                                 <Image 
@@ -37,7 +38,7 @@ const Footer = () => {
                                 177/55-59 Harris Street, Sydney NSW 2000, Australia.
                             </p>
                             <p className="pb-2 pt-2">
-                                Email us: <a href="mailto:contactus@himalayanherbs.com.au" className='text-blue-800 underline hover:text-green-700'>contactus@himalayanherbs.com.au</a>
+                                Email us: <br /> <a href="mailto:contactus@himalayanherbs.com.au" className='text-blue-800 underline hover:text-green-700 lg:text-xs'>contact@himalayanherbs.com.au</a>
                             </p>
                             <p className="pb-2 pt-2">
                                 <a href="mailto:contactus@himalayanherbs.com.au" className='text-blue-800 underline hover:text-red-500'>Report A Problem</a>
@@ -45,10 +46,11 @@ const Footer = () => {
                         </h5>
                     </ul>
 
-                    <ul className="px-2 sm:w-1/2 lg:w-1/4 pb-6 pt-6 lg:pt-3 ">
-                        <h3 className="font-bold text-xl  text-black mb-2 text-bold uppercase">Quick Links</h3>
+                    {/* QUICK LINKS footer section links here */}
+                    <ul className="px-4 sm:w-1/2 lg:w-1/5 pb-6 pt-6 lg:pt-3 ">
+                        <h3 className="font-bold text-lg  text-black mb-2 text-bold uppercase">Quick Links</h3>
                         
-                        <h5 className=" font-bold text-sm  text-black mt-4 text-bold">
+                        <h5 className=" font-medium text-sm  text-black mt-4">
                             <p className="mb-2 mt-4">
                                 <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
                                     Ask the Experts
@@ -60,7 +62,7 @@ const Footer = () => {
                                 </Link>
                             </p>
                             <p className="mb-2 mt-4">
-                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                <Link href='/contact' className='text-blue-800 hover:underline hover:text-green-700'>
                                     Contact Us
                                 </Link>
                             </p>
@@ -101,70 +103,132 @@ const Footer = () => {
                             </p>
                         </h5>
                     </ul>
+
+                    {/* DISCOVER footer section  links here */}
+                    <ul className="px-4 sm:w-1/2 lg:w-1/5 pb-6 pt-6 lg:pt-3 ">
+                        <h3 className="font-bold text-lg  text-black mb-2 text-bold uppercase">Discover</h3>
+                        
+                        <h5 className=" font-medium text-sm  text-black mt-4">
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Team
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our History
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href='/contact' className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Brands
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Sponsors
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Partners
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Traders
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Product Suppliers
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Our Manufacturers
+                                </Link>
+                            </p>
+                        </h5>
+                    </ul>
+
+                    {/* The COMPANY footer section links here */}
+                    <ul className="px-4 sm:w-1/2 lg:w-1/5 pb-6 pt-6 lg:pt-3 ">
+                        <h3 className="font-bold text-lg  text-black mb-2 text-bold uppercase">Company</h3>
+                        
+                        <h5 className=" font-medium text-sm  text-black mt-4">
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Franchisee
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Branches
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href='/' className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Podcast
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Careers
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    The Company
+                                </Link>
+                            </p>
+                        </h5>
+                    </ul>
                     
-                    <ul className="px-2 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 ">
-                        <h3 className="font-bold text-xl  text-black mb-2 text-bold">MEDICINAL HERBS</h3>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Healing Properties</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Remedies</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Common Ailments</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Aromatherapy Uses</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Infusions</a>
-                        </li>
-                    </ul>
-
-
-                    <ul className="px-2 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3 ">
-                        <h3 className="font-bold text-xl  text-black mb-2 text-bold">CULINARY HERBS</h3>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Cooking Essentials</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Popular Recipes</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Custom Blends</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seasonal Mixes</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Infusions</a>
-                        </li>                           
-                    </ul>
-
-                    <ul className="px-2 w-full sm:w-1/2 lg:w-1/4 border-green-50 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3 ">
-                        <h3 className="font-bold text-xl  text-black mb-2 text-bold">ORGANIC HERBS</h3>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Spicy Selections</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Global Spice Blends</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Herbal Tea Blends</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Seed Varieties</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block text-lg p-3 text-blue-900 hover:bg-lime-50 hover:text-green-900">Certified Organic Options</a>
-                        </li>                              
+                    {/* FIND US ON footer section links here */}
+                    <ul className="px-4 sm:w-1/2 lg:w-1/5 pb-6 pt-6 lg:pt-3 ">
+                        <h3 className="font-bold text-lg  text-black mb-2 text-bold uppercase">Find us on</h3>
+                        
+                        <h5 className=" font-medium text-sm  text-black mt-4">
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Facebook
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Twitter
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href='/' className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Instagram
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    TikTok
+                                </Link>
+                            </p>
+                            <p className="mb-2 mt-4">
+                                <Link href={'/'} className='text-blue-800 hover:underline hover:text-green-700'>
+                                    Youtube
+                                </Link>
+                            </p>
+                        </h5>
                     </ul>
                 </div>
             </div>
-            <div>
+            <div className='mx-2 border-gray-500 border-t flex flex-row gap-10'>
                 {/* copyright info */}
-                <p>
-                    &copyright 
+                <p className='pt-4'>
+                    &copy;himalayan herbs 2024. All Rights Reserved
+                </p>
+                <p className='pt-4'>
+                    Made with love by:  
+                    <a href="https://github.com/SazzGitHub/SazzGitHub" target='_blank' className='text-blue-500'>
+                        Sazzad ALI
+                    </a>
                 </p>
             </div>
         </div>

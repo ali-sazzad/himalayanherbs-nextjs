@@ -1,22 +1,27 @@
 // import Link from "next/link";
-import Footer from './components/Footer';
-import MainContent from './components/MainContent';
-import Navbar from './components/Navbar';
 import './globals.css';
+import Navbar from './components/Navbar';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
+    <>
+    <header>
+      <Navbar />     
+    </header>
+
     <main>
-
-      {/* <h1>Hello Testing!</h1>
-      <Link href="/header">Header</Link> */}
-
-        <Navbar />
-
-        <MainContent />
-
-        <Footer />
-
+      <MainContent />
+      
     </main>
+
+    
+    <footer>
+      <Footer />
+    </footer>
+
+
+    </>
   );
 }
