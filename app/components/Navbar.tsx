@@ -258,7 +258,7 @@ function Navbar() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54,83,20,1)"  width="22" height="22">
                                             <path d="M10 11H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V13H10V16L15 12L10 8V11Z"></path>
                                         </svg>                    
-                                        <Link href="/account/login" className="text-blue-900 bold border-b-2 border-blue-900 hover:text-blue-500">
+                                        <Link href="/account" className="text-blue-900 bold border-b-2 border-blue-900 hover:text-blue-500">
                                             Go to Account
                                         </Link>
                                     </div>
@@ -285,7 +285,7 @@ function Navbar() {
 
                     {/* Profile icon hidden for a mobile/smaller screen view  */}
                     <li className="font-bold relative py-6 px-4 text-sm lg:text-base flex justify-center items-center max-lg:hidden">
-                        <Link href="/account/login" className="hover:text-lime-700">
+                        <Link href="/account" className="hover:text-lime-700">
                             Account &nbsp;
                         </Link>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(54,83,20,1)">
