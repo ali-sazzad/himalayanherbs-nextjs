@@ -258,9 +258,9 @@ function Navbar() {
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54,83,20,1)"  width="22" height="22">
                                             <path d="M10 11H4V3C4 2.44772 4.44772 2 5 2H19C19.5523 2 20 2.44772 20 3V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V13H10V16L15 12L10 8V11Z"></path>
                                         </svg>                    
-                                        <a href="#" className="text-blue-900 bold border-b-2 border-blue-900 hover:text-blue-500">
+                                        <Link href="/account/login" className="text-blue-900 bold border-b-2 border-blue-900 hover:text-blue-500">
                                             Go to Account
-                                        </a>
+                                        </Link>
                                     </div>
                                 </ul>                      
                             </div>
@@ -285,9 +285,9 @@ function Navbar() {
 
                     {/* Profile icon hidden for a mobile/smaller screen view  */}
                     <li className="font-bold relative py-6 px-4 text-sm lg:text-base flex justify-center items-center max-lg:hidden">
-                        <a href="#" className="hover:text-lime-700">
+                        <Link href="/account/login" className="hover:text-lime-700">
                             Account &nbsp;
-                        </a>
+                        </Link>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(54,83,20,1)">
                             <path d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM6.02332 15.4163C7.49083 17.6069 9.69511 19 12.1597 19C14.6243 19 16.8286 17.6069 18.2961 15.4163C16.6885 13.9172 14.5312 13 12.1597 13C9.78821 13 7.63095 13.9172 6.02332 15.4163ZM12 11C13.6569 11 15 9.65685 15 8C15 6.34315 13.6569 5 12 5C10.3431 5 9 6.34315 9 8C9 9.65685 10.3431 11 12 11Z"></path>
                         </svg>
