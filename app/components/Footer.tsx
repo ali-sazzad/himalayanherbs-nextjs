@@ -33,6 +33,7 @@ const Footer = () => {
                                 />
                             </Link>
                         </li>
+                        {/* footer general info here ... */}
                         <h5 className="border-gray-950 border-t font-bold text-sm  text-black mt-8 pt-4 text-bold">
                             <p className="pb-2">
                                 177/55-59 Harris Street, Sydney NSW 2000, Australia.
