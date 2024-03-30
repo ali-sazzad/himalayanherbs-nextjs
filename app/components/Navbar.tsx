@@ -108,13 +108,13 @@ function Navbar() {
                                     </li>
                                     <li className="pt-3">
                                         <video height="300" width="300" src="/Presentation1.mp4" autoPlay muted loop className="p-3 border-none rounded-xl shadow-xl"></video> 
-                                    </li>                  
+                                    </li>
                                 </ul>
 
                             </div>
                         </div>
                     </li>
-
+                    
                     {/* This is regular links 'contact us' hidden for smaller screen/mobile version */}
                     <li className="hover:bg-lime-50 max-lg:hidden">
                         <Link href="/" className="font-bold relative block py-6 px-2 text-sm lg:text-base">Contact</Link>
