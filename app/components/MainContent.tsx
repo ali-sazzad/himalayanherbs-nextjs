@@ -4,12 +4,34 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ProductReviews from './ProductReviews';
 import FeatureProductSection from './FeatureProductSection';
+import Marquee from "react-fast-marquee";
 
 function MainContent() {
     const sponsors = [
         {
             id: 1,
-            imageUrl: '/productReview/product1.webp',
+            imageUrl: '/sponsors/gia leaves.png',
+            name: 'gia leaves',
+        },
+        {
+            id: 2,
+            imageUrl: '/sponsors/No Leaves.png',
+            name: 'No Leaves',
+        },
+        {
+            id: 3,
+            imageUrl: '/sponsors/herbal communist.png',
+            name: 'herbal communist',
+        },
+        {
+            id: 4,
+            imageUrl: '/sponsors/The Herbs.png',
+            name: 'The Herbs',
+        },
+        {
+            id: 5,
+            imageUrl: '/sponsors/One Leaves.png',
+            name: 'One Leaves',
         },
     ];
 
@@ -119,9 +141,31 @@ function MainContent() {
         <ProductReviews />
     </section>
 
-    <section id='about' className='my-12 pb-10 border-b px-4 lg:px-6'>
-        This is about company section
-        
+    <section id='about' className='my-12 pb-10 px-4 lg:px-6'>
+        <div className='sm:px-28 pb-10 '>
+            <h1 className='text-5xl max-md:text-3xl text-center lg:text-7xl font-bold mb-7 '>
+                About us
+            </h1>
+            <h3 className='md:text-center text-justify text-lg text-pretty text-blue-950 tracking-wide leading-loose '>
+                At Himalayan Herbs, we're passionate about bringing you the finest quality herbs and spices straight from the heart of the Himalayas. Our journey began with a vision to share the rich cultural heritage and time-honored traditions of the Himalayan region with the world.
+
+                With a commitment to sustainability and ethical sourcing, we work closely with local farmers and communities to ensure that our products are not only of the highest quality but also produced in a way that respects the environment and supports the livelihoods of those who cultivate them.
+            </h3>
+        </div>
+        <Marquee>     
+            <div className='flex flex-row gap-10 overflow-hidden'>
+                {sponsors.map((sponsors) => (
+                    <div key={sponsors.id} className='mx-4 items-center '>
+                        <Image
+                        src={sponsors.imageUrl}
+                        alt=' {sponsors.name} '
+                        width={400}
+                        height={200}
+                        />
+                    </div>
+                ))}
+            </div>
+        </Marquee>
     </section>
 
 
