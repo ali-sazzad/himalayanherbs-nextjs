@@ -152,8 +152,11 @@ function MainContent() {
                 With a commitment to sustainability and ethical sourcing, we work closely with local farmers and communities to ensure that our products are not only of the highest quality but also produced in a way that respects the environment and supports the livelihoods of those who cultivate them.
             </h3>
         </div>
+        <h1>
+            Some of our brands
+        </h1>
         <Marquee>     
-            <div className='flex flex-row gap-10 overflow-hidden'>
+            <div className='flex flex-row gap-10 items-center overflow-hidden '>
                 {sponsors.map((sponsors) => (
                     <div key={sponsors.id} className='mx-4 items-center '>
                         <Image
