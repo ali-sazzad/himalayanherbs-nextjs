@@ -28,7 +28,7 @@ function Navbar() {
                     </li>
                     {/* about */}
                     <li className="hover:bg-lime-50">
-                        <Link href="#about" className="font-bold relative block py-6 px-2 text-sm lg:text-base">
+                        <Link href="#" className="font-bold relative block py-6 px-2 text-sm lg:text-base">
                             About
                         </Link>
                     </li>

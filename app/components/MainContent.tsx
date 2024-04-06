@@ -2,12 +2,17 @@ import React from 'react';
 import styles from './MainContent.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { RiArrowLeftSLine, RiArrowRightSLine } from '@remixicon/react';
-import ProductReviews from './ProductReviews ';
+import ProductReviews from './ProductReviews';
 import FeatureProductSection from './FeatureProductSection';
 
 function MainContent() {
-    
+    const sponsors = [
+        {
+            id: 1,
+            imageUrl: '/productReview/product1.webp',
+        },
+    ];
+
   return (
     // MAIN Content here ...
     <>
@@ -110,10 +115,14 @@ function MainContent() {
 
 
     {/* Product reviews section here ... */}
-    <section className='my-12 pb-10 border-blue-100 border-b'>
+    <section className='my-12 border-blue-100'>
         <ProductReviews />
     </section>
 
+    <section id='about' className='my-12 pb-10 border-b px-4 lg:px-6'>
+        This is about company section
+        
+    </section>
 
 
     </>

@@ -84,7 +84,7 @@ const FeatureProductSection = () => {
                         </button>
                     </div>
                     {/* Display other images as a gallery */}
-                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-4 ">
+                    <div className="grid items-center grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-4 ">
                         {images.map((image, index) => (
                             index !== currentImageIndex && (
                                 <div key={index} className="p-4 flex flex-col items-center">
